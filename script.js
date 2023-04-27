@@ -6,9 +6,10 @@ window.onload = function() {
                            }
 if ("geolocation" in navigator) {
                                  navigator.geolocation.getCurrentPosition(success)
-                                } else {
-                                        console.log("Geolocation is not available in your browser.");
-                                       }
+                                } 
+else {
+      console.log("Geolocation is not available in your browser.");
+     }
 function success(position){
                             latitude = position.coords.latitude;
                             longitude = position.coords.longitude;
