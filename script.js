@@ -1,5 +1,5 @@
-let latitude=0;
-let longitude=0;
+let latitude=36.9836297;
+let longitude=-121.9840388;
 window.onload = function() {
                             const date = new Date();
                             const dateString = (date.getMonth() + 1) + '/' + date.getDate() + '/' + date.getFullYear();
