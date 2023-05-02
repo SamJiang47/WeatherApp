@@ -1,6 +1,5 @@
 var latitude
 var longitude
-//const week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];//
 
 window.onload = function() {
                             const date = new Date();
