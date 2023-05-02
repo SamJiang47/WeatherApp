@@ -1,5 +1,5 @@
-var latitude
-var longitude
+let latitude= 0;
+let longitude= 0;
 
 window.onload = function() {
                             const date = new Date();
@@ -7,14 +7,18 @@ window.onload = function() {
                             document.getElementById('date').innerHTML= dateString
                            
                             if ("geolocation" in navigator) {
-                                                                navigator.geolocation.getCurrentPosition(function(position){
-                                                                latitude = position.coords.latitude;
-                                                                longitude = position.coords.longitude;
-                                                                console.log("Latitude: " + latitude + ", Longitude: " + longitude);
-                                                              });
+                                                                navigator.geolocation.getCurrentPosition(success)
                                                             } else {
                                                                     console.log("Geolocation is not available in your browser.");
                                                                    }
+                           }
+
+function success(position){
+                           latitude= position.coords.latitude;
+                           longitude= position.coords.longitude;
+                           console.log(latitude, longitude);
+                          }
+                            
 
                             
 	                          const btn = document.getElementById("getWeatherBtn")
@@ -25,4 +29,4 @@ window.onload = function() {
                                                                                                                forecastElements[i].innerHTML = forecast[i][0] + ": " + forecast[i][1] + "°F";
                                                                                                               }
                                                                 });
-                          }
+                          
