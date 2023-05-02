@@ -25,7 +25,7 @@ function success(position){
 	                          btn.addEventListener("click", () => {
                                                                     var forecast = [["M", 52], ["Tu", 53], ["W", 54], ["Th", 55], ["F", 56]]
                                                                     var forecastElements = document.getElementsByClassName("forecast");
-                                                                    for (let i = 0; i < forecast.length; i++) {
+                                                                    for (var i = 0; i < forecast.length; i++) {
                                                                                                                forecastElements[i].innerHTML = forecast[i][0] + ": " + forecast[i][1] + "°F";
                                                                                                               }
                                                                 });
