@@ -25,7 +25,7 @@ function success(position){
 	                          btn.addEventListener("click", function() {
 
                                                                      const xhr = new XMLHttpRequest();
-                                                                     xhr.open("GET", `http://localhost:3000/weather/${lat}/${lon}`); 
+                                                                     xhr.open("GET", `http://localhost:3000/weather/${latitude}/${longitude}`); 
                                                                      xhr.send();
                                                                      xhr.onload = function() {                 
                                                                                               const body = JSON.parse(xhr.responseText);
