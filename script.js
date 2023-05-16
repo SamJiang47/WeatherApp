@@ -36,18 +36,6 @@ function success(position){
 
                                                                                              }
 
-                                                                     var location = "Santa Cruz";
-                                                                     var temp = 59;
-                                                                     var helloString = `Hello, in ${location} it is ${temp} Degrees`;
-                                                                     console.log(helloString);                
-
-
-                                                                    var forecast = [["M", 52], ["Tu", 53], ["W", 54], ["Th", 55], ["F", 56]]
-                                                                    var forecastElements = document.getElementsByClassName("forecast");
-                                                                    for (var i = 0; i < forecast.length; i++) {
-                                                                                                               forecastElements[i].innerHTML = forecast[i][0] + ": " + forecast[i][1] + "°F";
-                                                                                                              }
-
                                                                     const xhr2 = new XMLHttpRequest();
                                                                     xhr2.open("GET", `http://localhost:3000/weather/${latitude}/${longitude}`); 
                                                                     xhr2.send();
