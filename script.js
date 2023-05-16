@@ -40,7 +40,7 @@ function success(position){
                                                                       xhr2.open("GET", `http://localhost:3000/5day/${latitude}/${longitude}`); 
                                                                       xhr2.send();
                                                                       xhr2.onload = function() {
-                                                                                                console.log(xhr2.responseText);
+                                                                                              
                                                                                                 const body = JSON.parse(xhr2.responseText);
                                                                                                 
                                                                                                 var forecast = body;
