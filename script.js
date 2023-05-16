@@ -37,10 +37,11 @@ function success(position){
                                                                                               }
 
                                                                       const xhr2 = new XMLHttpRequest();
-                                                                      xhr2.open("GET", `http://localhost:3000/weather/${latitude}/${longitude}`); 
+                                                                      xhr2.open("GET", `http://localhost:3000/5day/${latitude}/${longitude}`); 
                                                                       xhr2.send();
                                                                       xhr2.onload = function() {                 
                                                                                                 const body = JSON.parse(xhr2.responseText);
+                                                                                                console.log(xhr2.responseText);
                                                                                                 var forecast = body;
                                                                                                 var forecastElements = document.getElementsByClassName("forecast");
 	                                                                                              for (var i = 0; i < forecast.length; i++) {
