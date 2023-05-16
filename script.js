@@ -49,7 +49,7 @@ function success(position){
                                                                                                               }
 
                                                                     const xhr2 = new XMLHttpRequest();
-                                                                    xhr2.open("GET", `http://localhost:3000/weather/${lat}/${lon}`); 
+                                                                    xhr2.open("GET", `http://localhost:3000/weather/${latitude}/${longitude}`); 
                                                                     xhr2.send();
                                                                     xhr2.onload = function() {                 
                                                                                               const body = JSON.parse(xhr2.responseText);
